@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Crimes By Neighborhood in Hartford CT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!--
+  <link href="css/jquery.mobile-1.3.1.css" rel="stylesheet">
+  -->
+  <link rel="stylesheet" href="http://leafletjs.com/dist/leaflet.css"/>
+
+  <script src="js/jquery-1.9.1.js"></script>
+  <script src="js/jquery.mobile-1.3.1.js"></script>
+  <script src="http://leafletjs.com/dist/leaflet.js"></script>
+
+  <script src="js/crime.js"></script>
+  <style>
+  #map {
+    float: left;
+    width: 50%;
+    }
+  .row-fluid {
+    float: left;
+    width: 50%;
+    padding: 2em;
+    box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+    <div data-role="page" data-control-title="Second-level" id="mapview">
+      <div data-theme="a" data-role="header">
+          <h3>
+              Crimes By Neighborhood in Hartford CT
+          </h3>
+      </div>
+      <div data-role="content">
+	      <div id="map" style="height: 400px"> </div>
+	      <script>
+		      var map = L.map('map').setView([41.759, -72.670], 12);
+
+			L.tileLayer('https://{s}.tiles.mapbox.com/v3/mkobar.kfo1de6f/{z}/{x}/{y}.png', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    maxZoom: 18
+}).addTo(map);
+
+		var popup = L.popup();
+
+		function onMapClick(e) {
+			popup
+				.setLatLng(e.latlng)
+				.setContent("You clicked the map at " + e.latlng.toString())
+				.openOn(map);
+		}
+
+		map.on('click', onMapClick);
+	      </script>
+
+<div class="row-fluid wide">
+        <div id="big-numbers" class="span4">
+            <h2 abbr="Summary">Summary</h2>
+            <h4>Crime reports in Hartford CT</h4>
+            <h3>Nov. 01, 2014 - 
+                Jan. 17, 2015</h3>
+        <div class="summary-numbers" id="violent">
+                <div class="absolute-number">
+                    <div class="big-number">
+                        <p id="total-vcrimes" class="total-crimes">0</p>
+                    </div>
+                    <div class="number-label violent-subtypes">
+                        
+                        <span id="robbery" class="map-select active" data-map-target="ROB">Robbery  - 0</span><br />
+                        
+                        <span id="assault" class="map-select active" data-map-target="ASL">Assault  - 0</span><br />
+                        
+                        <span id="homicide" class="map-select active" data-map-target="HOM">Homicide  - 0</span><br />
+                        
+                        <span id="sexassault" class="map-select active" data-map-target="SXA">Sexual assault  - 0</span><br />
+                        
+                    </div>
+                </div>
+            </div><!--summary-->
+            <div class="summary-numbers" id="property">
+
+                    <div class="absolute-number">
+                        <div class="big-number">
+                            <p id="total-pcrimes" class="total-crimes">0</p>
+                        </div>
+                        <span class="number-label property-subtypes">
+                            
+                            <span id="theft" class="map-select active" data-map-target="THF">Theft  - 0</span><br />
+                            
+                            <span id="burglary" class="map-select active" data-map-target="BUR">Burglary  - 0</span><br />
+                            
+                            <span id="mvtheft" class="map-select active" data-map-target="MVT">Motor vehicle theft  - 0</span><br />
+                            
+                        </span>
+                    </div>
+                </div><!--summary-->
+            </div>
+        </div>
+	<div>
+      </div>
+</body>
+</html>
