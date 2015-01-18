@@ -3,7 +3,7 @@ Crime Mapper web application for Hack Hartford 17 Jan 2015
 
  using data.hartford.gov open data API and leaflet.js to create quick copy of
  
- [http://crime.chicagotribune.com/community/englewood]
+ http://crime.chicagotribune.com/community/englewood
  
 for Hartford, CT.  The current demo is [here](https://mkobar.github.io/crimemapper) 
 
