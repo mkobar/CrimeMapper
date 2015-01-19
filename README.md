@@ -1,7 +1,7 @@
 # CrimeMapper
-Hartford Crime Mapper web application for __Hack Hartford__ 17 Jan 2015
+__Hartford Crime Mapper__ web application for __Hack Hartford__ 17 Jan 2015
 
-using http://data.hartford.gov open data API and leaflet.js to create quick copy of 
+using [Hartford's Open Data API] (http://data.hartford.gov) and [leaflet.js] (http://leafletjs.com/) to create quick copy of 
 ###  the "CRIME in CHICAGOLAND" web app
 by The Chicago Tribune
 
@@ -12,6 +12,12 @@ by The Chicago Tribune
  http://crime.chicagotribune.com/community/englewood
  
 for Hartford, CT.  The current demo is [here](https://mkobar.github.io/crimemapper) 
+
+### Hartford CrimeMapper
+  ![Hartford CrimeMapper][app2]
+
+[app2]: https://github.com/mkobar/CrimeMapper/raw/master/Crime_Mapper_Hartford_CT.jpg
+
 
 ## Details
 __Datasource__:  https://data.hartford.gov/Public-Safety/Police-Incidents-01012005-to-Current/889t-nwfu
