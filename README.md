@@ -1,11 +1,9 @@
 # CrimeMapper
-Crime Mapper web application for Hack Hartford 17 Jan 2015
+Hartford Crime Mapper web application for __Hack Hartford__ 17 Jan 2015
 
-using data.hartford.gov open data API and leaflet.js to create quick copy of
-
-the 
-###  CRIME in CHICAGOLAND
-web app by The Chicago Tribune
+using http://data.hartford.gov open data API and leaflet.js to create quick copy of 
+###  the "CRIME in CHICAGOLAND" web app
+by The Chicago Tribune
 
  ![CRIME in CHICAGOLAND][app]
 
