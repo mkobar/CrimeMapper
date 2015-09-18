@@ -11,7 +11,7 @@ by The Chicago Tribune
 
  http://crime.chicagotribune.com/community/englewood
  
-for Hartford, CT.  The current demo is [here](https://mkobar.github.io/crimemapper) 
+for Hartford, CT.  The current live demo is [here](http://mkobar.github.io/crimemapper) 
 
 ### Hartford CrimeMapper
   ![Hartford CrimeMapper][app2]
