@@ -1,7 +1,7 @@
 # CrimeMapper
 __Hartford Crime Mapper__ web application for __Hack Hartford__ 17 Jan 2015
 
-using [Hartford's Open Data API] (http://data.hartford.gov) and [leaflet.js] (http://leafletjs.com/) to create quick copy of 
+using [Hartford's Open Data API](http://data.hartford.gov) and [leaflet.js](http://leafletjs.com/) to create quick copy of 
 ###  the "CRIME in CHICAGOLAND" web app
 by The Chicago Tribune
 
@@ -32,5 +32,6 @@ Good examples:
   
  *  [CrimeStep] (http://mapmeld.github.io/crimestep?start=41.76877,-87.64895&end=41.777791,-87.644034)
 
-Released under the [MIT License] (http://opensource.org/licenses/MIT)
-Copyright (c) 2015 [RKO Security] (http://www.rkosecurity.com)
+Released under the [MIT License](http://opensource.org/licenses/MIT)
+
+Copyright (c) 2015 [RKO Security](http://www.rkosecurity.com)
